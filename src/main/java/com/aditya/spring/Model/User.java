@@ -9,50 +9,50 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false , updatable = false)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private Integer contact;
+    private String firstname;
+    private String lastname;
+    private String contact;
     private String email;
 
     public User(){}
 
-    public User(Long id, String firstName, String lastName, Integer contact, String email) {
-        this.id=id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(Long id, String firstname, String lastname, String contact, String email) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.contact = contact;
         this.email = email;
     }
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id){
-        this.id=id;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    public Integer getContact() {
+    public String getContact() {
         return contact;
     }
 
-    public void setContact(Integer contact) {
+    public void setContact(String contact) {
         this.contact = contact;
     }
 
